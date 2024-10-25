@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/WebAppStyle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>MMU Water Fountain</title>
+
+    <nav class="navbar navbar-expand-lg text-light bg-dark">
+      <ul class="navbar-nav mx-auto">
+        <a> MMU Water Fountain</a>
+      </ul>
+    </nav>
+  </head>
+  <body>
+    <div class="parent-container d-flex">
+      <div class="container">
+        <div class="row">
+          <!--Google map-->
+          <div
+            id="map-container"
+            class="z-depth-1-half map-container"
+            style="height: 500px"
+          >
+          <!--Annie added the places for all of the water fountains in google map.
+          Only with this link 
+          > https://www.google.com/maps/d/edit?mid=1d-WDGxsO__BS3vZ7w6LqFbJCjeD41AQ&usp=sharing < 
+          people can access it -->
+            <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1d-WDGxsO__BS3vZ7w6LqFbJCjeD41AQ&ehbc=2E312F"
+              frameborder="0"
+              style="
+                position: relative;
+                top: 100px;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+              "
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!--Form requesting location-->
+      <div class="container">
+        <div class="row">
+          <div
+            class="col"
+            style="
+              position: relative;
+              top: 150px;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+            "
+          >
+            <h3 class="text-center">Select building are you interested in</h3>
+            <select
+              id="location-select"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Choose building from the list</option>
+              <option value="JD">John Dalton</option>
+              <option value="BS">Business School</option>
+              <option value="LIBRARY">All Saints Library</option>
+            </select>
+
+            <div class="locations" style="padding: 50px">
+              <div class="JD-info text-center">
+                <h1>John Dalton</h1>
+                <p>This is just a test for JD</p>
+              </div>
+
+              <div class="BS-info text-center">
+                <h1>Business School</h1>
+                <p>This is just a test for BS</p>
+              </div>
+
+              <div class="LIBRARY-info text-center">
+                <h1>All Saints Library</h1>
+                <p>This is just a test for All Saints Library</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button
+          onclick="myFunction()"
+          style="
+            height: 30px;
+            position: relative;
+            top: 100px;
+            left: -20px;
+            bottom: 0;
+            right: 0;
+          "
+        >
+          White/Black
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
